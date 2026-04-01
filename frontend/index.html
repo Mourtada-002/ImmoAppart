@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImoAppart — Location Immobilière de Prestige</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="#" class="nav-logo">Imo<span>Appart</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#biens">Nos Biens</a></li>
+    <li><a href="#process">Comment ça marche</a></li>
+    <li><a href="#temoignages">Avis</a></li>
+    <li><a href="#contact" class="nav-cta">Nous Contacter</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="padding:0; max-width:none;">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Location de prestige depuis 2015</p>
+    <h1 class="hero-title">Votre prochain<br>chez-vous,<br><em>avec élégance.</em></h1>
+    <p class="hero-subtitle">ImoAppart sélectionne pour vous des biens d'exception — appartements contemporains, maisons résidentielles et locations de vacances — pour des séjours courts ou de longue durée.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" id="heroPayBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3M3 11h18M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        Réserver maintenant
+      </button>
+      <a href="#biens" class="btn-secondary">
+        Voir les biens
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-number">240+</div>
+        <div class="stat-label">Biens disponibles</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">98%</div>
+        <div class="stat-label">Clients satisfaits</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">10</div>
+        <div class="stat-label">Ans d'expérience</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80&fit=crop" alt="Appartement moderne de luxe" loading="eager">
+    <div class="hero-img-overlay"></div>
+    <div class="hero-badge">
+      <div class="hero-badge-price">50€</div>
+      <div class="hero-badge-label">À partir de / mois</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-layout">
+    <div>
+      <p class="section-eyebrow reveal">Ce que nous offrons</p>
+      <h2 class="section-title reveal">Un service<br><em>clé en main</em><br>de A à Z</h2>
+      <p class="section-desc reveal" style="margin-bottom:48px;">De la recherche du bien idéal à l'assistance quotidienne, nous prenons en charge chaque étape de votre location pour vous offrir une expérience sans friction.</p>
+      <div class="services-grid reveal">
+        <div class="service-card">
+          <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          <h4>Gestion immobilière</h4>
+          <p>Gestion complète de votre bien — de l'entrée à la sortie des locataires, états des lieux inclus.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <h4>Entretien &amp; maintenance</h4>
+          <p>Intervention rapide pour toutes réparations, entretien régulier et suivi technique de votre logement.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <h4>Assistance 24/7</h4>
+          <p>Notre équipe est disponible à toute heure pour répondre à vos besoins et résoudre tout imprévu.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3M3 11h18M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <h4>Locations flexibles</h4>
+          <p>Courte ou longue durée, nous nous adaptons à votre rythme de vie et à vos contraintes professionnelles.</p>
+        </div>
+      </div>
+    </div>
+    <div class="services-image reveal">
+      <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80&fit=crop" alt="Intérieur moderne">
+      <div class="services-image-badge">
+        <p>10</p>
+        <span>Ans d'expertise</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROPERTIES -->
+<section id="biens">
+  <div class="properties-header">
+    <div>
+      <p class="section-eyebrow reveal">Sélection exclusive</p>
+      <h2 class="section-title reveal">Nos biens <em>à louer</em></h2>
+    </div>
+    <a href="#contact" class="btn-secondary reveal">
+      Voir tout le catalogue
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+    </a>
+  </div>
+  <div class="properties-grid">
+    <div class="property-card reveal">
+      <div class="property-img">
+        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80&fit=crop" alt="Appartement Paris">
+        <span class="property-tag">Longue durée</span>
+      </div>
+      <div class="property-body">
+        <p class="property-location">Paris — 8ème arr.</p>
+        <h3 class="property-name">Appartement Haussmannien</h3>
+        <p class="property-desc">Magnifique appartement de 85m² entièrement rénové, avec parquet ancien, moulures et vue dégagée sur cour intérieure calme.</p>
+        <div class="property-footer">
+          <div class="property-price">1 850€ <span>/ mois</span></div>
+          <div class="property-features">
+            <span class="feat">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+              85m²
+            </span>
+            <span class="feat">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+              3 pièces
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="property-card reveal">
+      <div class="property-img">
+        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80&fit=crop" alt="Maison de vacances">
+        <span class="property-tag">Vacances</span>
+      </div>
+      <div class="property-body">
+        <p class="property-location">Côte d'Azur — Nice</p>
+        <h3 class="property-name">Villa Vue Mer</h3>
+        <p class="property-desc">Villa provençale de 140m² avec terrasse panoramique, piscine privée et accès direct à la plage. Idéale pour un séjour en famille.</p>
+        <div class="property-footer">
+          <div class="property-price">3 200€ <span>/ sem.</span></div>
+          <div class="property-features">
+            <span class="feat">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+              140m²
+            </span>
+            <span class="feat">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+              5 pièces
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="property-card reveal">
+      <div class="property-img">
+        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80&fit=crop" alt="Studio moderne">
+        <span class="property-tag">Courte durée</span>
+      </div>
+      <div class="property-body">
+        <p class="property-location">Lyon — Presqu'île</p>
+        <h3 class="property-name">Studio Design Contemporain</h3>
+        <p class="property-desc">Studio de 32m² au cœur du centre historique, design épuré, entièrement équipé. Connexion fibre haut débit incluse.</p>
+        <div class="property-footer">
+          <div class="property-price">750€ <span>/ mois</span></div>
+          <div class="property-features">
+            <span class="feat">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+              32m²
+            </span>
+            <span class="feat">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+              Studio
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <p class="section-eyebrow" style="color:var(--gold);">Simple &amp; transparent</p>
+  <h2 class="section-title reveal">Louer en <em>4 étapes</em><br>seulement</h2>
+  <p class="section-desc reveal">Nous avons conçu un processus fluide pour que vous puissiez accéder à votre nouveau logement sans tracas administratifs ni mauvaises surprises.</p>
+  <div class="steps">
+    <div class="step reveal">
+      <span class="step-num">01</span>
+      <h3 class="step-title">Choisissez votre bien</h3>
+      <p class="step-desc">Parcourez notre catalogue de biens soigneusement sélectionnés et trouvez celui qui correspond à vos critères.</p>
+      <div class="step-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="#1C1C1C" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </div>
+    </div>
+    <div class="step reveal">
+      <span class="step-num">02</span>
+      <h3 class="step-title">Déposez votre dossier</h3>
+      <p class="step-desc">Envoyez vos documents en ligne en quelques minutes. Notre équipe les vérifie sous 24h ouvrées.</p>
+      <div class="step-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="#1C1C1C" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </div>
+    </div>
+    <div class="step reveal">
+      <span class="step-num">03</span>
+      <h3 class="step-title">Signez votre bail</h3>
+      <p class="step-desc">Signature électronique sécurisée du contrat de location. Tout est 100% dématérialisé, rapide et légal.</p>
+      <div class="step-arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="#1C1C1C" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </div>
+    </div>
+    <div class="step reveal">
+      <span class="step-num">04</span>
+      <h3 class="step-title">Emménagez serein</h3>
+      <p class="step-desc">Récupérez vos clés lors d'un état des lieux personnalisé. Notre équipe reste disponible à chaque instant.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="temoignages">
+  <p class="section-eyebrow reveal">Ils nous font confiance</p>
+  <h2 class="section-title reveal">Ce que disent<br>nos <em>locataires</em></h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <span class="testimonial-quote">"</span>
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">Service irréprochable du début à la fin. L'équipe ImoAppart a pris en charge tous les aspects de ma location, de la visite à l'emménagement. Je recommande sans hésiter.</p>
+      <div class="testimonial-author">
+        <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=80&q=80&fit=crop&crop=face" alt="Sophie M." class="author-avatar">
+        <div>
+          <div class="author-name">Sophie Marchand</div>
+          <div class="author-role">Locataire longue durée · Paris</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <span class="testimonial-quote">"</span>
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">J'ai loué une villa pour les vacances et l'expérience était parfaite. Bien conforme aux photos, propre à l'arrivée et assistance réactive. On reviendra l'année prochaine !</p>
+      <div class="testimonial-author">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80&fit=crop&crop=face" alt="Thomas L." class="author-avatar">
+        <div>
+          <div class="author-name">Thomas Laurent</div>
+          <div class="author-role">Location vacances · Côte d'Azur</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-eyebrow reveal">Parlons-nous</p>
+  <h2 class="section-title reveal">Prenez <em>contact</em><br>avec nous</h2>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <h4>Nous sommes là pour vous</h4>
+      <p>Que vous souhaitiez louer un bien, confier la gestion de votre propriété ou simplement obtenir des informations, notre équipe est à votre écoute du lundi au samedi.</p>
+      <div class="contact-detail">
+        <div class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <div class="contact-detail-text">
+          <strong>Email</strong>
+          <span><a href="mailto:contact@imoappart.com">contact@imoappart.com</a></span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        </div>
+        <div class="contact-detail-text">
+          <strong>Téléphone</strong>
+          <span>+33 1 23 45 67 89</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <div class="contact-detail-text">
+          <strong>Agence</strong>
+          <span>12 Rue du Faubourg Saint-Honoré, 75008 Paris</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="contact-detail-text">
+          <strong>Horaires</strong>
+          <span>Lun–Ven 9h–19h · Sam 10h–17h</span>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form-wrapper reveal">
+      <div class="form-row-double">
+        <div class="form-row">
+          <label class="form-label">Prénom</label>
+          <input type="text" class="form-input" placeholder="Marie">
+        </div>
+        <div class="form-row">
+          <label class="form-label">Nom</label>
+          <input type="text" class="form-input" placeholder="Dupont">
+        </div>
+      </div>
+      <div class="form-row">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-input" placeholder="marie@exemple.com">
+      </div>
+      <div class="form-row">
+        <label class="form-label">Téléphone</label>
+        <input type="tel" class="form-input" placeholder="+33 6 00 00 00 00">
+      </div>
+      <div class="form-row">
+        <label class="form-label">Type de location</label>
+        <select class="form-select">
+          <option value="">Sélectionnez une option</option>
+          <option>Longue durée (résidentiel)</option>
+          <option>Courte durée (meublé)</option>
+          <option>Location de vacances</option>
+          <option>Gestion de mon bien</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label class="form-label">Votre message</label>
+        <textarea class="form-textarea" placeholder="Décrivez votre projet, vos besoins, vos dates..."></textarea>
+      </div>
+      <button class="form-submit" id="contactPayBtn">Envoyer la demande</button>
+      <p style="font-size:12px;color:var(--text-muted);margin-top:12px;text-align:center;">Réponse garantie sous 24h ouvrées · Données protégées</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="footer-logo">Imo<span>Appart</span></span>
+      <p>Votre agence de location immobilière de confiance depuis 2015. Nous mettons l'excellence au service de votre confort.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Navigation</h5>
+      <ul>
+        <li><a href="#services">Nos services</a></li>
+        <li><a href="#biens">Nos biens</a></li>
+        <li><a href="#process">Comment ça marche</a></li>
+        <li><a href="#temoignages">Avis clients</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Locations</h5>
+      <ul>
+        <li><a href="#">Paris &amp; Île-de-France</a></li>
+        <li><a href="#">Côte d'Azur</a></li>
+        <li><a href="#">Lyon</a></li>
+        <li><a href="#">Bordeaux</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Légal</h5>
+      <ul>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">CGU &amp; CGV</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 ImoAppart. Tous droits réservés.</span>
+    <span>Paiement sécurisé par <a href="#">Stripe</a></span>
+  </div>
+</footer>
+
+<!-- PAYMENT MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close" id="modalClose">&times;</button>
+    <h3>Choisissez votre formule</h3>
+    <p>Sécurisez votre location dès aujourd'hui. Paiement 100% sécurisé via Stripe.</p>
+    <div class="plan-options">
+      <div class="plan-option selected" data-plan="short">
+        <div>
+          <div class="plan-option-name">Courte durée</div>
+          <div class="plan-option-desc">Idéal pour 1 à 6 mois</div>
+        </div>
+        <div class="plan-option-price">50€ <span>/ mois</span></div>
+      </div>
+      <div class="plan-option" data-plan="long">
+        <div>
+          <div class="plan-option-name">Longue durée</div>
+          <div class="plan-option-desc">Au-delà de 6 mois — tarif avantageux</div>
+        </div>
+        <div class="plan-option-price">40€ <span>/ mois</span></div>
+      </div>
+      <div class="plan-option" data-plan="vacances">
+        <div>
+          <div class="plan-option-name">Location vacances</div>
+          <div class="plan-option-desc">Week-end, semaine ou plus</div>
+        </div>
+        <div class="plan-option-price">Devis <span>personnalisé</span></div>
+      </div>
+    </div>
+    <button class="btn-primary" style="width:100%;justify-content:center;" id="payConfirmBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+      Procéder au paiement
+    </button>
+    <div class="stripe-note">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      Paiement crypté SSL · Propulsé par Stripe
+    </div>
+  </div>
+</div>
+
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+  const stripe = Stripe("pk_test_51TFNXEAhKhzGwXlAquy517AduVrJ1W4dfyHzyu1TNI5mV02ka4DgsT8qKb6BHdqgfW8vGHujvVRVM1YraNq0sX6A00PAMF32TX");
+
+  // Modal logic
+  const overlay = document.getElementById('modalOverlay');
+  const openModal = () => overlay.classList.add('open');
+  const closeModal = () => overlay.classList.remove('open');
+  document.getElementById('heroPayBtn').addEventListener('click', openModal);
+  document.getElementById('contactPayBtn').addEventListener('click', openModal);
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) closeModal();
+  });
+
+  // Plan selection
+  document.querySelectorAll('.plan-option').forEach(function(opt) {
+    opt.addEventListener('click', function() {
+      document.querySelectorAll('.plan-option').forEach(function(o) {
+        o.classList.remove('selected');
+      });
+      opt.classList.add('selected');
+    });
+  });
+
+  // Stripe payment
+  document.getElementById('payConfirmBtn').addEventListener('click', async function() {
+    var btn = document.getElementById('payConfirmBtn');
+    btn.textContent = 'Redirection en cours\u2026';
+    btn.disabled = true;
+    try {
+      var res = await fetch('http://localhost:3000/create-subscription', { method: 'POST' });
+      if (!res.ok) throw new Error('Réponse serveur invalide');
+      var data = await res.json();
+      stripe.redirectToCheckout({ sessionId: data.id });
+    } catch (err) {
+      btn.textContent = 'Procéder au paiement';
+      btn.disabled = false;
+      alert('Erreur lors de la création de la session de paiement.');
+    }
+  });
+
+  // Scroll reveal
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry, i) {
+      if (entry.isIntersecting) {
+        setTimeout(function() {
+          entry.target.classList.add('visible');
+        }, i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(function(el) {
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
