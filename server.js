@@ -21,8 +21,8 @@ app.post("/create-subscription", async (req, res) => {
           quantity: 1,
         },
       ],
-      success_url: "http://localhost:5500/success.html",
-      cancel_url: "http://localhost:5500/cancel.html",
+      success_url: `${process.env.FRONTEND_URL || 'http://localhost:5500'}/success.html`,
+      cancel_url: `${process.env.FRONTEND_URL || 'http://localhost:5500'}/cancel.html`,
     });
 
     res.json({ id: session.id });
@@ -32,4 +32,5 @@ app.post("/create-subscription", async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("Server running on port 3000"));
+// Export pour Vercel (au lieu de app.listen)
+module.exports = app;
