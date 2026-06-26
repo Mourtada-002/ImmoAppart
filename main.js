@@ -1,38 +1,117 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// ─── NAV ──────────────────────────────────────────────────
-gsap.from('nav', {
-  y: -80,
-  opacity: 0,
-  duration: 1,
-  ease: 'power3.out'
-});
+// ─── CINEMATIC ENTRANCE ───────────────────────────────────
+const curtainTl = gsap.timeline();
 
-// ─── HERO ─────────────────────────────────────────────────
-const heroTl = gsap.timeline({ delay: 0.3 });
-
-heroTl
-  .from('.hero-eyebrow', {
-    opacity: 0, y: 20, duration: 0.7, ease: 'power3.out'
+// Rideau qui s'ouvre
+curtainTl
+  .to('.curtain-top', {
+    y: '-100%',
+    duration: 1.2,
+    ease: 'power4.inOut'
   })
+  .to('.curtain-bottom', {
+    y: '100%',
+    duration: 1.2,
+    ease: 'power4.inOut'
+  }, '<')
+
+// Nav slide down
+  .from('nav', {
+    y: -80,
+    opacity: 0,
+    duration: 0.8,
+    ease: 'power3.out'
+  }, '-=0.4')
+
+// Image droite — glisse depuis la droite avec clip-path
+  .fromTo('.hero-right', {
+    x: 120,
+    opacity: 0,
+    clipPath: 'inset(0 100% 0 0)'
+  }, {
+    x: 0,
+    opacity: 1,
+    clipPath: 'inset(0 0% 0 0)',
+    duration: 1.3,
+    ease: 'power4.out'
+  }, '-=0.6')
+
+// Eyebrow
+  .from('.hero-eyebrow', {
+    x: -60,
+    opacity: 0,
+    duration: 0.7,
+    ease: 'power3.out'
+  }, '-=0.9')
+
+// Titre ligne par ligne
   .from('.hero-title', {
-    opacity: 0, y: 40, duration: 0.9, ease: 'power3.out'
-  }, '-=0.3')
+    x: -80,
+    opacity: 0,
+    duration: 0.9,
+    ease: 'power3.out'
+  }, '-=0.6')
+
+// Sous-titre
   .from('.hero-subtitle', {
-    opacity: 0, y: 30, duration: 0.8, ease: 'power3.out'
+    x: -60,
+    opacity: 0,
+    duration: 0.8,
+    ease: 'power3.out'
+  }, '-=0.5')
+
+// Boutons
+  .from('.hero-actions .btn-primary', {
+    x: -40,
+    opacity: 0,
+    duration: 0.6,
+    ease: 'power3.out'
   }, '-=0.4')
-  .from('.hero-actions', {
-    opacity: 0, y: 20, duration: 0.7, ease: 'power3.out'
+  .from('.hero-actions .btn-secondary', {
+    x: -40,
+    opacity: 0,
+    duration: 0.6,
+    ease: 'power3.out'
   }, '-=0.4')
-  .from('.hero-stats .stat-item', {
-    opacity: 0, y: 20, duration: 0.6, stagger: 0.15, ease: 'power3.out'
+
+// Badge prix — pop avec rotation
+  .fromTo('.hero-badge', {
+    opacity: 0,
+    scale: 0.6,
+    rotation: -8
+  }, {
+    opacity: 1,
+    scale: 1,
+    rotation: 0,
+    duration: 0.8,
+    ease: 'back.out(2)'
   }, '-=0.3')
-  .from('.hero-right img', {
-    scale: 1.08, duration: 1.4, ease: 'power3.out'
-  }, 0)
-  .from('.hero-badge', {
-    opacity: 0, x: 20, duration: 0.7, ease: 'power3.out'
-  }, '-=0.4');
+
+// Stats — cascade avec flash gold
+  .from('.hero-stats', {
+    opacity: 0,
+    y: 20,
+    duration: 0.5,
+    ease: 'power3.out'
+  }, '-=0.2')
+  .from('.stat-item', {
+    opacity: 0,
+    y: 30,
+    duration: 0.5,
+    stagger: 0.15,
+    ease: 'power3.out',
+    onComplete: () => {
+      document.querySelectorAll('.stat-number').forEach((el, i) => {
+        setTimeout(() => {
+          gsap.fromTo(el, 
+            { color: 'var(--gold)' },
+            { color: 'var(--charcoal)', duration: 0.8, ease: 'power2.out' }
+          );
+        }, i * 150);
+      });
+    }
+  }, '-=0.2');
 
 // ─── COMPTEUR STATS ───────────────────────────────────────
 document.querySelectorAll('.stat-number').forEach(el => {
@@ -185,4 +264,35 @@ submitBtn.addEventListener('click', () => {
     submitBtn.disabled = false;
     setTimeout(() => ok.remove(), 5000);
   }, 1200);
+});
+
+// ─── BURGER MENU ──────────────────────────────────────────
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileLinks = document.querySelectorAll('.mobile-link');
+
+const menuTl = gsap.timeline({ paused: true });
+menuTl
+  .to('.mobile-menu', { opacity: 1, duration: 0.4, ease: 'power3.out' })
+  .from('.mobile-link', {
+    opacity: 0, y: 40, duration: 0.5,
+    stagger: 0.08, ease: 'power3.out'
+  }, '-=0.2');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+  if (mobileMenu.classList.contains('open')) {
+    menuTl.play();
+  } else {
+    menuTl.reverse();
+  }
+});
+
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    burger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    menuTl.reverse();
+  });
 });

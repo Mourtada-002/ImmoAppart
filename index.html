@@ -13,6 +13,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   </head>
   <body>
+    <!-- CINEMATIC CURTAIN -->
+    <div class="curtain curtain-top"></div>
+    <div class="curtain curtain-bottom"></div>
+
     <!-- NAVIGATION -->
     <nav>
       <a href="#" class="nav-logo">Imo<span>Appart</span></a>
@@ -23,7 +27,21 @@
         <li><a href="#temoignages">Avis</a></li>
         <li><a href="#contact" class="nav-cta">Nous Contacter</a></li>
       </ul>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#biens" class="mobile-link">Nos Biens</a></li>
+        <li><a href="#process" class="mobile-link">Comment ça marche</a></li>
+        <li><a href="#temoignages" class="mobile-link">Avis</a></li>
+        <li><a href="#contact" class="mobile-link">Nous Contacter</a></li>
+      </ul>
+    </div>
 
     <!-- HERO -->
     <section class="hero" style="padding: 0; max-width: none">
