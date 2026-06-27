@@ -6,21 +6,12 @@ A **premium real estate rental website** built with HTML, CSS and JavaScript, fe
 
 ## Features
 
-**Cinematic Hero Animation** – Full-screen entrance with curtain reveal, image sliding from the right and text cascading from the left using GSAP timelines
-
-**Animated Statistics** – Live number counters with gold flash effect triggered on scroll
-
-**ScrollTrigger Sections** – Every section animates into view with staggered reveals, directional slides and scale effects powered by GSAP ScrollTrigger
-
-**Property Listings** – Showcase cards for residential, vacation and short-term rentals with FCFA pricing
-
-**4-Step Process** – Visual step-by-step rental guide with sequential entrance animations
-
-**Contact Form** – Client-side validation with error highlighting and success confirmation message
-
-**Mobile Burger Menu** – Full-screen overlay navigation with cascading GSAP link animations and asymmetric burger icon
-
-**Fully Responsive** – Adaptive layout for all screen sizes with mobile-first image ordering and non-sticky navigation on mobile
+- Cinematic hero entrance with curtain reveal and GSAP timelines
+- ScrollTrigger animations with staggered reveals on every section
+- Animated statistics counters with gold flash effect
+- Contact form with client-side validation and success feedback
+- Full-screen mobile menu with GSAP cascade animation
+- Fully responsive — mobile-first layout and non-sticky nav on mobile
 
 ---
 
