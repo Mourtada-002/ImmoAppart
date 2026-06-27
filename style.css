@@ -398,12 +398,13 @@ section { padding: 100px 8vw; }
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 .properties-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  margin-bottom: 60px;
 }
 .property-card {
   background: var(--white);
