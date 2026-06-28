@@ -22,7 +22,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ─── CINEMATIC CURTAIN ─── */
+/* CINEMATIC CURTAIN */
 .curtain {
   position: fixed;
   left: 0; right: 0;
@@ -34,7 +34,7 @@ body {
 .curtain-top { top: 0; }
 .curtain-bottom { bottom: 0; }
 
-/* ─── NAV ─── */
+/* NAV */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
@@ -75,7 +75,7 @@ nav {
 }
 .nav-cta:hover { background: var(--gold) !important; color: var(--charcoal) !important; }
 
-/* ─── BURGER ─── */
+/* BURGER */
 .burger {
   display: none;
   flex-direction: column;
@@ -98,7 +98,7 @@ nav {
 .burger span:nth-child(2) { width: 20px; }
 .burger span:nth-child(3) { width: 12px; }
 
-/* ─── MENU MOBILE ─── */
+/* MENU MOBILE */
 .mobile-menu {
   position: fixed;
   inset: 0;
@@ -129,7 +129,7 @@ nav {
   .burger { display: flex; }
 }
 
-/* ─── HERO ─── */
+/* HERO */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -284,7 +284,7 @@ nav {
   margin-top: 4px;
 }
 
-/* ─── SECTION BASE ─── */
+/* SECTION BASE */
 section { padding: 100px 8vw; }
 .section-eyebrow {
   font-size: 11px;
@@ -321,7 +321,7 @@ section { padding: 100px 8vw; }
   max-width: 520px;
 }
 
-/* ─── SERVICES ─── */
+/* SERVICES */
 #services { background: var(--white); }
 .services-layout {
   display: grid;
@@ -392,7 +392,7 @@ section { padding: 100px 8vw; }
   margin-top: 6px;
 }
 
-/* ─── PROPERTIES ─── */
+/* PROPERTIES */
 #biens { background: var(--cream); }
 .properties-header {
   display: flex;
@@ -489,7 +489,7 @@ section { padding: 100px 8vw; }
 }
 .feat svg { color: var(--gold); width: 14px; height: 14px; flex-shrink: 0; }
 
-/* ─── PROCESS ─── */
+/* PROCESS */
 #process {
   background: var(--charcoal);
   color: var(--cream);
@@ -600,7 +600,7 @@ section { padding: 100px 8vw; }
 }
 .stars { color: var(--gold); font-size: 13px; letter-spacing: 2px; margin-bottom: 16px; }
 
-/* ─── CONTACT ─── */
+/* CONTACT */
 #contact { background: var(--white); }
 .contact-grid {
   display: grid;
@@ -705,7 +705,7 @@ section { padding: 100px 8vw; }
 }
 .form-submit:hover { background: var(--gold); color: var(--charcoal); }
 
-/* ─── FOOTER ─── */
+/* FOOTER */
 footer {
   background: var(--charcoal);
   color: rgba(248,244,238,0.55);
@@ -764,7 +764,7 @@ footer {
 }
 .footer-bottom a:hover { color: var(--gold); }
 
-/* ─── RESPONSIVE ─── */
+/* RESPONSIVE */
 @media (max-width: 900px) {
   nav { position: relative; }
   .hero { grid-template-columns: 1fr; height: auto; }

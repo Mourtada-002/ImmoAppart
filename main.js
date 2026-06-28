@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// ─── CINEMATIC ENTRANCE ───────────────────────────────────
+// CINEMATIC ENTRANCE
 const curtainTl = gsap.timeline();
 
 // Rideau qui s'ouvre
@@ -24,7 +24,7 @@ curtainTl
     ease: 'power3.out'
   }, '-=0.4')
 
-// Image droite — glisse depuis la droite avec clip-path
+// Image droite
   .fromTo('.hero-right', {
     x: 120,
     opacity: 0,
@@ -45,7 +45,7 @@ curtainTl
     ease: 'power3.out'
   }, '-=0.9')
 
-// Titre ligne par ligne
+// Titre
   .from('.hero-title', {
     x: -80,
     opacity: 0,
@@ -75,7 +75,7 @@ curtainTl
     ease: 'power3.out'
   }, '-=0.4')
 
-// Badge prix — pop avec rotation
+// Badge prix
   .fromTo('.hero-badge', {
     opacity: 0,
     scale: 0.6,
@@ -88,7 +88,7 @@ curtainTl
     ease: 'back.out(2)'
   }, '-=0.3')
 
-// Stats — cascade avec flash gold
+// Stats
   .from('.hero-stats', {
     opacity: 0,
     y: 20,
@@ -113,7 +113,7 @@ curtainTl
     }
   }, '-=0.2');
 
-// ─── COMPTEUR STATS ───────────────────────────────────────
+// COMPTEUR STATS
 document.querySelectorAll('.stat-number').forEach(el => {
   const raw = el.textContent.trim();
   const num = parseInt(raw.replace(/\D/g, ''));
@@ -137,7 +137,7 @@ document.querySelectorAll('.stat-number').forEach(el => {
   });
 });
 
-// ─── SERVICES ─────────────────────────────────────────────
+// SERVICES
 gsap.from('#services .section-eyebrow, #services .section-title, #services .section-desc', {
   scrollTrigger: { trigger: '#services', start: 'top 75%' },
   opacity: 0, y: 40, duration: 0.8, stagger: 0.15, ease: 'power3.out'
@@ -158,7 +158,7 @@ gsap.from('.services-image-badge', {
   opacity: 0, scale: 0.8, duration: 0.7, ease: 'back.out(1.7)'
 });
 
-// ─── BIENS ────────────────────────────────────────────────
+// BIENS
 gsap.from('.properties-header > *', {
   scrollTrigger: { trigger: '#biens', start: 'top 75%' },
   opacity: 0, y: 30, duration: 0.7, stagger: 0.15, ease: 'power3.out'
@@ -169,7 +169,7 @@ gsap.from('.property-card', {
   opacity: 0, y: 60, duration: 0.8, stagger: 0.18, ease: 'power3.out'
 });
 
-// ─── PROCESS ──────────────────────────────────────────────
+// PROCESS
 gsap.from('#process .section-title, #process .section-desc', {
   scrollTrigger: { trigger: '#process', start: 'top 75%' },
   opacity: 0, y: 40, duration: 0.8, stagger: 0.15, ease: 'power3.out'
@@ -185,7 +185,7 @@ gsap.from('.step-num', {
   opacity: 0, scale: 0.5, duration: 0.6, stagger: 0.15, ease: 'back.out(1.4)'
 });
 
-// ─── TÉMOIGNAGES ──────────────────────────────────────────
+// TÉMOIGNAGES
 gsap.from('#temoignages .section-eyebrow, #temoignages .section-title', {
   scrollTrigger: { trigger: '#temoignages', start: 'top 75%' },
   opacity: 0, y: 30, duration: 0.8, stagger: 0.15, ease: 'power3.out'
@@ -196,7 +196,7 @@ gsap.from('.testimonial-card', {
   opacity: 0, y: 50, duration: 0.8, stagger: 0.2, ease: 'power3.out'
 });
 
-// ─── CONTACT ──────────────────────────────────────────────
+// CONTACT
 gsap.from('#contact .section-eyebrow, #contact .section-title', {
   scrollTrigger: { trigger: '#contact', start: 'top 75%' },
   opacity: 0, y: 30, duration: 0.8, stagger: 0.15, ease: 'power3.out'
@@ -212,7 +212,7 @@ gsap.from('.contact-form-wrapper', {
   opacity: 0, x: 50, duration: 0.9, ease: 'power3.out'
 });
 
-// ─── FORMULAIRE CONTACT ───────────────────────────────────
+// FORMULAIRE CONTACT
 const form = document.querySelector('.contact-form-wrapper');
 const submitBtn = document.getElementById('contactPayBtn');
 
@@ -266,7 +266,7 @@ submitBtn.addEventListener('click', () => {
   }, 1200);
 });
 
-// ─── BURGER MENU ──────────────────────────────────────────
+// BURGER MENU
 const burger = document.getElementById('burger');
 const mobileMenu = document.getElementById('mobileMenu');
 const mobileLinks = document.querySelectorAll('.mobile-link');
