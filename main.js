@@ -296,3 +296,9 @@ mobileLinks.forEach(link => {
     menuTl.reverse();
   });
 });
+
+// COPYRIGHT - année dynamique
+const currentYearEl = document.getElementById('current-year');
+if (currentYearEl) {
+  currentYearEl.textContent = new Date().getFullYear();
+}
